@@ -1,0 +1,5 @@
+baseURL = 'https://www.elesscode.com'
+languageCode = 'en-us'
+title = 'elesscode'
+theme = "ananke"
+publishdir = 'docs'

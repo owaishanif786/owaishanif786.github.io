@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>elesscode</title>
+    <link>https://www.elesscode.com/</link>
+    <description>Recent content on elesscode</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Aug 2022 09:14:39 +0500</lastBuildDate><atom:link href="https://www.elesscode.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up hugo blog with github pages and namecheap</title>
+      <link>https://www.elesscode.com/posts/my-first-post/</link>
+      <pubDate>Mon, 01 Aug 2022 09:14:39 +0500</pubDate>
+      
+      <guid>https://www.elesscode.com/posts/my-first-post/</guid>
+      <description>This is first post where we will how we can
+buy domain example.com from namecheap point example.com to www.example.com CNAME @ www.example.com point www to username.github.io CNAME www username.github.io Add multiple A records which points to github IPs A @ 185.199.108.153 A @ 185.199.109.153 A @ 185.199.110.153 A @ 185.199.111.153
+On github side. create repository username.github.io goto that repo settings&amp;gt;pages Change folder to docs instead of root and hit save</description>
+    </item>
+    
+  </channel>
+</rss>
