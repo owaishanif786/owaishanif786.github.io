@@ -3,3 +3,6 @@ languageCode = 'en-us'
 title = 'elesscode'
 theme = "ananke"
 publishdir = 'docs'
+[params]
+  body_classes = "firaa bg-light-yellow"
+  article_classes = "firaa"

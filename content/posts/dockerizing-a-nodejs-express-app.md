@@ -2,6 +2,7 @@
 title: "Dockerizing a Nodejs Express App"
 date: 2022-08-02T07:50:07+05:00
 draft: false
+toc: true
 ---
 
 Dockerizing a node express app is simple. 
