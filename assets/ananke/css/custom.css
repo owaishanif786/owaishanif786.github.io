@@ -56,5 +56,8 @@
   .font-fira{
     font-family: 'Fira Code Light';
     letter-spacing: -1px;
-  }
+    font-size: 1em;
+    font-weight: lighter;
+    font-stretch: condensed;
+    }
 
