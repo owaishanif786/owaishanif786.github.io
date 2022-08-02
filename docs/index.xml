@@ -6,7 +6,18 @@
     <description>Recent content on elesscode</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Aug 2022 09:14:39 +0500</lastBuildDate><atom:link href="https://www.elesscode.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Aug 2022 07:50:07 +0500</lastBuildDate><atom:link href="https://www.elesscode.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dockerizing a Nodejs Express App</title>
+      <link>https://www.elesscode.com/posts/dockerizing-a-nodejs-express-app/</link>
+      <pubDate>Tue, 02 Aug 2022 07:50:07 +0500</pubDate>
+      
+      <guid>https://www.elesscode.com/posts/dockerizing-a-nodejs-express-app/</guid>
+      <description>Dockerizing a node express app is simple.
+step1: Create simple node app with express. package.json with with its dependencies. index.js with required code which will be creating and running server at port 8080. Our simple server code that returns hello world when we will hit http://x.x.x.x:8080/
+//package.json { &amp;#34;name&amp;#34;: &amp;#34;node-express-app&amp;#34;, &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;, &amp;#34;description&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;main&amp;#34;: &amp;#34;index.js&amp;#34;, &amp;#34;scripts&amp;#34;: { &amp;#34;start&amp;#34;: &amp;#34;node index.js&amp;#34; }, &amp;#34;keywords&amp;#34;: [], &amp;#34;author&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;license&amp;#34;: &amp;#34;ISC&amp;#34;, &amp;#34;dependencies&amp;#34;: { &amp;#34;express&amp;#34;: &amp;#34;^4.</description>
+    </item>
+    
     <item>
       <title>Setting up hugo blog with github pages and namecheap</title>
       <link>https://www.elesscode.com/posts/my-first-post/</link>

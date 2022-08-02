@@ -31,7 +31,7 @@ also check Enforce HTTPS.
 Inside docs folder just create test index.html file with some hello content.
 
 Next install hugo cli
-```
+```bash
 hugo new site example.com
 cd example.com
 git init
