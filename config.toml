@@ -4,5 +4,7 @@ title = 'elesscode'
 theme = "ananke"
 publishdir = 'docs'
 [params]
-  body_classes = "firaa bg-light-yellow"
-  article_classes = "firaa"
+  body_classes = "bg-light-yellow font-fira"
+  post_content_classes = "font-fira"
+  custom_css = ["custom.css","special.css"]
+  show_reading_time = true
