@@ -2,6 +2,8 @@
 title: "Setting up hugo blog with github pages and namecheap"
 date: 2022-08-01T09:14:39+05:00
 draft: false
+featured_image: '/images/hugo_logo.png'
+
 ---
 
 This is first post on the blog where we will see how to we can setup our blog using hugo, github pages and namecheap avoiding any hosting costs.
