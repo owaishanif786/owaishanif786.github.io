@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Kubernetes Basics | elesscode</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="We will see basic information about kubernetes, architecture and its compoentes and Features
+kubernetes Architecture Control plane have following 4 components: CASE
+Controller Manager &ndash; keeps tracks of whats happening i.e restarting API Server &ndash; scripts, UI, API, CLI Scheduler &ndash; ensures pods replacement. on which node pod to place etcd database &ndash; kubernetes backing store Virtual Network creates one unified machine. its how master and child nodes communicate. Inside node each pod have its own ip.">
+    <meta name="generator" content="Hugo 0.101.0" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+  
+
+  
+    <link rel="stylesheet" href="/special.css">
+  
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Kubernetes Basics" />
+<meta property="og:description" content="We will see basic information about kubernetes, architecture and its compoentes and Features
+kubernetes Architecture Control plane have following 4 components: CASE
+Controller Manager &ndash; keeps tracks of whats happening i.e restarting API Server &ndash; scripts, UI, API, CLI Scheduler &ndash; ensures pods replacement. on which node pod to place etcd database &ndash; kubernetes backing store Virtual Network creates one unified machine. its how master and child nodes communicate. Inside node each pod have its own ip." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.elesscode.com/posts/kubernetes-basics/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-03T21:40:14+05:00" />
+<meta property="article:modified_time" content="2022-08-03T21:40:14+05:00" />
+
+<meta itemprop="name" content="Kubernetes Basics">
+<meta itemprop="description" content="We will see basic information about kubernetes, architecture and its compoentes and Features
+kubernetes Architecture Control plane have following 4 components: CASE
+Controller Manager &ndash; keeps tracks of whats happening i.e restarting API Server &ndash; scripts, UI, API, CLI Scheduler &ndash; ensures pods replacement. on which node pod to place etcd database &ndash; kubernetes backing store Virtual Network creates one unified machine. its how master and child nodes communicate. Inside node each pod have its own ip."><meta itemprop="datePublished" content="2022-08-03T21:40:14+05:00" />
+<meta itemprop="dateModified" content="2022-08-03T21:40:14+05:00" />
+<meta itemprop="wordCount" content="346">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Kubernetes Basics"/>
+<meta name="twitter:description" content="We will see basic information about kubernetes, architecture and its compoentes and Features
+kubernetes Architecture Control plane have following 4 components: CASE
+Controller Manager &ndash; keeps tracks of whats happening i.e restarting API Server &ndash; scripts, UI, API, CLI Scheduler &ndash; ensures pods replacement. on which node pod to place etcd database &ndash; kubernetes backing store Virtual Network creates one unified machine. its how master and child nodes communicate. Inside node each pod have its own ip."/>
+
+	<script>
+    console.log("custom-script")
+</script>
+  </head>
+
+  <body class="ma0 bg-light-yellow font-fira">
+
+    
+   
+  
+
+  
+  <header class="cover bg-top" style="background-image: url('https://www.elesscode.com/images/kubernetes-logo.png');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        elesscode
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Kubernetes Basics</h1>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Kubernetes Basics</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2022-08-03T21:40:14+05:00">August 3, 2022</time>
+      
+
+      
+      
+        <span class="f6 mv4 dib tracked"> - 2 minutes read </span>
+        <span class="f6 mv4 dib tracked"> - 346 words </span>
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy font-fira f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>We will see basic information about kubernetes, architecture and its compoentes and Features</p>
+<h3 id="kubernetes-architecture">kubernetes Architecture</h3>
+<p>Control plane have following 4 components: CASE</p>
+<ol>
+<li>Controller Manager &ndash; keeps tracks of whats happening i.e restarting</li>
+<li>API Server &ndash; scripts, UI, API, CLI</li>
+<li>Scheduler &ndash; ensures pods replacement. on which node pod to place</li>
+<li>etcd database &ndash; kubernetes backing store</li>
+</ol>
+<h3 id="virtual-network">Virtual Network</h3>
+<p>creates one unified machine. its how master and child nodes communicate.
+Inside node each pod have its own ip.</p>
+<h2 id="features">Features</h2>
+<ol>
+<li>Automated rollouts and rollback</li>
+<li>Service Discovery and load balancing</li>
+<li>Storage orchestration</li>
+<li>Secret and configuration management</li>
+<li>Automated bin packing</li>
+<li>Batch execution</li>
+<li>IPv4/IPv6 dual-stack</li>
+<li>Horizontal Scaling</li>
+<li>Self Healing</li>
+</ol>
+<h3 id="node--pods">Node &amp; Pods</h3>
+<p>Node have multiple pods
+pod mostly have single container</p>
+<ul>
+<li>pod is abstraction of container so that any kind of container can run inside pod.</li>
+<li>smallest unit in kubernetes</li>
+<li>usually one application per pod or container</li>
+<li>each pod gets its own container</li>
+<li>pods are ephemeral. avoid using database or anything you want to be consistent.</li>
+</ul>
+<h3 id="service">Service</h3>
+<ol>
+<li>Internal (Default) (something private like database)</li>
+<li>External (something needs to be exposed like public api)</li>
+</ol>
+<h3 id="kubernetes-few-components-and-facts">Kubernetes few components and facts</h3>
+<ol>
+<li>Kubelet is primary node agent</li>
+<li>Control plane have multiple nodes</li>
+<li>Each node have its own kubelet</li>
+<li>Each node can have multiple containers/pods</li>
+</ol>
+<h5 id="pod">Pod</h5>
+<p>Pod is abstraction of container so that any kind of container can run inside pod.</p>
+<h5 id="service-1">Service</h5>
+<p>A group of pods declared as network service with one DNS. its service responsibility to load balance traffic in the pods.</p>
+<h5 id="configmap">ConfigMap</h5>
+<p>A way to store environment variables so pods can access them. credentials should be saved in secretes not configMap</p>
+<h5 id="secret">Secret</h5>
+<p>Mechanism to store credentials, API keys etc. something like AWS Secrets manager or Ansible vault.</p>
+<h5 id="ingress">Ingress</h5>
+<p>Manages connections comming from outside cluster and forwarding to the services inside.</p>
+<h5 id="deployment">Deployment</h5>
+<p>Deployment provides way to update pods. create new or replace pods and replica set.</p>
+<h5 id="stateful-set">Stateful set</h5>
+<p>While deployment and scaling of pods it maintains ordering and uniqueness.</p>
+<h5 id="daemon-set">Daemon set</h5>
+<p>Run copy of pods. When node added/deleted to the cluster pods are added/removed from nodes. Remvoing Daemonset will remove the pods created by the Daemonset.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://www.elesscode.com" >
+    &copy;  elesscode 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -6,7 +6,18 @@
     <description>Recent content in Posts on elesscode</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Aug 2022 07:50:07 +0500</lastBuildDate><atom:link href="https://www.elesscode.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Aug 2022 21:40:14 +0500</lastBuildDate><atom:link href="https://www.elesscode.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Basics</title>
+      <link>https://www.elesscode.com/posts/kubernetes-basics/</link>
+      <pubDate>Wed, 03 Aug 2022 21:40:14 +0500</pubDate>
+      
+      <guid>https://www.elesscode.com/posts/kubernetes-basics/</guid>
+      <description>We will see basic information about kubernetes, architecture and its compoentes and Features
+kubernetes Architecture Control plane have following 4 components: CASE
+Controller Manager &amp;ndash; keeps tracks of whats happening i.e restarting API Server &amp;ndash; scripts, UI, API, CLI Scheduler &amp;ndash; ensures pods replacement. on which node pod to place etcd database &amp;ndash; kubernetes backing store Virtual Network creates one unified machine. its how master and child nodes communicate. Inside node each pod have its own ip.</description>
+    </item>
+    
     <item>
       <title>Dockerizing a Nodejs Express App</title>
       <link>https://www.elesscode.com/posts/dockerizing-a-nodejs-express-app/</link>
