@@ -4,7 +4,7 @@ date: 2022-08-05T08:13:22+05:00
 draft: false
 toc: true
 featured_image: '/images/ec2-eks-ecs-fargate-lambda.png'
-
+image: '/images/ec2-eks-ecs-fargate-lambda.png'
 ---
 
 This is an overview from the Moon about basic compute resources in aws and what technologies can help us to manage them. 

@@ -1,10 +1,25 @@
 baseURL = 'https://www.elesscode.com'
+description = "blog about cloud development"
 languageCode = 'en-us'
+tags = ['cloud', 'aws','node','typescript','javascript']
 title = 'elesscode'
 theme = "ananke"
 publishdir = 'docs'
+googleAnalytics = "G-M2E12SF4V3"
 [params]
   body_classes = "bg-light-yellow font-fira"
   post_content_classes = "font-fira"
   custom_css = ["custom.css","special.css"]
   show_reading_time = true
+  author = "Owais H"
+  twitter = "https://twitter.com/elesscode"
+  github = "https://github.com/owaishanif786"
+  linkedin = "https://www.linkedin.com/in/owaishanif786/"
+  stackoverflow = "https://stackoverflow.com/users/3203959/bawa-g"
+  recent_posts_number = 3
+  Paginate = 10
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
