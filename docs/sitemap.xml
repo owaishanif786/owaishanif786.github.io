@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.elesscode.com/</loc>
-    <lastmod>2022-08-03T21:40:14+05:00</lastmod>
+    <loc>https://www.elesscode.com/posts/ec2-docker-lambda-fargate-eks-ecs-overview/</loc>
+    <lastmod>2022-08-05T08:13:22+05:00</lastmod>
   </url><url>
-    <loc>https://www.elesscode.com/posts/kubernetes-basics/</loc>
-    <lastmod>2022-08-03T21:40:14+05:00</lastmod>
+    <loc>https://www.elesscode.com/</loc>
+    <lastmod>2022-08-05T08:13:22+05:00</lastmod>
   </url><url>
     <loc>https://www.elesscode.com/posts/</loc>
+    <lastmod>2022-08-05T08:13:22+05:00</lastmod>
+  </url><url>
+    <loc>https://www.elesscode.com/posts/kubernetes-basics/</loc>
     <lastmod>2022-08-03T21:40:14+05:00</lastmod>
   </url><url>
     <loc>https://www.elesscode.com/posts/dockerizing-a-nodejs-express-app/</loc>
