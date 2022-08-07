@@ -247,11 +247,11 @@ Fargate Profile Template tells us which pods should run on fargate.  Below is th
 </span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;fargateProfileName&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;FargateProfileCatchAll&#34;</span><span style="color:#960050;background-color:#1e0010">,</span>
 </span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;podExecutionRole&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;arn...&#34;</span><span style="color:#960050;background-color:#1e0010">,</span>
 </span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;createdAt&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#ae81ff">343491919.234</span>
-</span></span></code></pre></div><h4 id="selectors">selectors</h4>
+</span></span></code></pre></div><h3 id="selectors">selectors</h3>
 <p>Notice the <code>selectors</code> or we can call pod selectors. its a combination of namespaces and labels which allows EKS to catch pod deployment. Using namespaces and labels we can categories our apps like X1-Sync-Service, X1-Web-API and labels like dev,test,prod</p>
-<h4 id="subnets">subnets</h4>
+<h3 id="subnets">subnets</h3>
 <p>Subnets to pick for the pod deployment or in other way we are choosing availability zones(AZs) where our pods will be placed.</p>
-<h5 id="podexecutionrole">podExecutionRole</h5>
+<h3 id="podexecutionrole">podExecutionRole</h3>
 <p>IAM role to be associated to the kubelet. why kubelet needs IAM role. Just like we assign role to EC2 so it can access s3 etc.
 similarly we assign kubelet an IAM role so</p>
 <ol>
@@ -338,10 +338,10 @@ spec:
 </span></span><span style="display:flex;"><span>fargate-ip-192-168-107-162.us-east-2.compute.internal   Ready    &lt;none&gt;   14h    v1.22.6-eks-14c7a48
 </span></span><span style="display:flex;"><span>fargate-ip-192-168-150-220.us-east-2.compute.internal   Ready    &lt;none&gt;   4m9s   v1.22.6-eks-14c7a48
 </span></span><span style="display:flex;"><span>fargate-ip-192-168-98-182.us-east-2.compute.internal    Ready    &lt;none&gt;   14h    v1.22.6-eks-14c7a48
-</span></span></code></pre></div><h4 id="why-eks">Why EKS</h4>
+</span></span></code></pre></div><h3 id="why-eks">Why EKS</h3>
 <p>EKS install,maintain and operates kubernetes core feature called control plane or nodes. We will have to do lot of work if we setup kubernetes on EC2.
 EKS integrated with ECR, ELB, IAM and VPC.</p>
-<h4 id="why-eks-and-fargate">Why EKS and fargate</h4>
+<h3 id="why-eks-and-fargate">Why EKS and fargate</h3>
 <p>EKS have almost same benefits which kubernetes have.</p>
 <ol>
 <li>We only care about app spec not infrastructure nodes.</li>
@@ -374,9 +374,14 @@ EKS integrated with ECR, ELB, IAM and VPC.</p>
     <li>
       <ul>
         <li><a href="#fargate-profile">Fargate Profile</a></li>
+        <li><a href="#selectors">selectors</a></li>
+        <li><a href="#subnets">subnets</a></li>
+        <li><a href="#podexecutionrole">podExecutionRole</a></li>
         <li><a href="#fargate-scheduler">Fargate Scheduler</a></li>
         <li><a href="#first-install-eksctl">First install eksctl</a></li>
         <li><a href="#creating-an-eks-cluster-with-fargate-using-eksctl">Creating an EKS cluster with fargate using eksctl</a></li>
+        <li><a href="#why-eks">Why EKS</a></li>
+        <li><a href="#why-eks-and-fargate">Why EKS and fargate</a></li>
         <li><a href="#fargate-limitations">Fargate Limitations</a></li>
       </ul>
     </li>

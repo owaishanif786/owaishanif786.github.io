@@ -48,13 +48,13 @@ Fargate Profile Template tells us which pods should run on fargate.  Below is th
 
 ```
 
-#### selectors
+### selectors
 Notice the `selectors` or we can call pod selectors. its a combination of namespaces and labels which allows EKS to catch pod deployment. Using namespaces and labels we can categories our apps like X1-Sync-Service, X1-Web-API and labels like dev,test,prod
 
-#### subnets
+### subnets
 Subnets to pick for the pod deployment or in other way we are choosing availability zones(AZs) where our pods will be placed.
 
-##### podExecutionRole
+### podExecutionRole
 IAM role to be associated to the kubelet. why kubelet needs IAM role. Just like we assign role to EC2 so it can access s3 etc. 
 similarly we assign kubelet an IAM role so 
 1. kubelet can pull images from ECR Elastic container registry
@@ -176,11 +176,11 @@ fargate-ip-192-168-150-220.us-east-2.compute.internal   Ready    <none>   4m9s  
 fargate-ip-192-168-98-182.us-east-2.compute.internal    Ready    <none>   14h    v1.22.6-eks-14c7a48
 ```
 
-#### Why EKS
+### Why EKS
 EKS install,maintain and operates kubernetes core feature called control plane or nodes. We will have to do lot of work if we setup kubernetes on EC2. 
 EKS integrated with ECR, ELB, IAM and VPC.
 
-#### Why EKS and fargate
+### Why EKS and fargate
 EKS have almost same benefits which kubernetes have. 
 
 1. We only care about app spec not infrastructure nodes.
