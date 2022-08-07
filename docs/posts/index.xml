@@ -18,16 +18,6 @@ Normally when we run EC2, we can see those machines running in EC2 dashboard but
     </item>
     
     <item>
-      <title>Nodejs Design Patterns</title>
-      <link>https://www.elesscode.com/posts/nodejs-design-patterns/</link>
-      <pubDate>Sat, 06 Aug 2022 02:17:08 +0500</pubDate>
-      
-      <guid>https://www.elesscode.com/posts/nodejs-design-patterns/</guid>
-      <description>Node.js Design Patterns Singleton Pattern Used when we need only one instance of class regardless of how many times we call it. example logger, database connection simply to keep the instance as singleton, export with new keyword so that node.js will cache the object.
-class Database{ constructor(){ } } module.exports = new Database() The other long way to create another class and export it with another class by check Singleton.instance = new Logger()</description>
-    </item>
-    
-    <item>
       <title>Ec2 Docker Lambda Fargate Eks Ecs Overview</title>
       <link>https://www.elesscode.com/posts/ec2-docker-lambda-fargate-eks-ecs-overview/</link>
       <pubDate>Fri, 05 Aug 2022 08:13:22 +0500</pubDate>
