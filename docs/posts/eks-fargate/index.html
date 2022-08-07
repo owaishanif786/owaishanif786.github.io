@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Ec2 Docker Lambda Fargate Eks Ecs Overview | elesscode</title>
+    <title>EKS Fargate | elesscode</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="This is an overview from the Moon about basic compute resources in aws and what technologies can help us to manage them.
-EC2: Elastic Compute EC2 are the machines in the AWS cloud just like you create ubuntu,windows VMs in virtualbox or VM-ware. you can connect them via ssh or any RDP tools. EC2 have hourly billing model based on resources like RAM, CPU and network traffic.
-why ec2: just like in old days we build an app.">
+    <meta name="description" content="EKS with Fargate EKS can run containers on EC2 or Fargate Micro VMs or both. In case of fargate only mode, EKS asks &ldquo;hey fargate can you run containers for me.&rdquo; With fargate you don&rsquo;t have to manage scaling with Auto Scaling Group like we do in case of EC2.
+Normally when we run EC2, we can see those machines running in EC2 dashboard but fargate is only visible in EKS cluster detail section named culster&gt;compute&gt;nodes along with fargate profile.">
     <meta name="generator" content="Hugo 0.101.0" />
     
     
@@ -37,26 +36,23 @@ why ec2: just like in old days we build an app.">
 
     
     
-    <meta property="og:title" content="Ec2 Docker Lambda Fargate Eks Ecs Overview" />
-<meta property="og:description" content="This is an overview from the Moon about basic compute resources in aws and what technologies can help us to manage them.
-EC2: Elastic Compute EC2 are the machines in the AWS cloud just like you create ubuntu,windows VMs in virtualbox or VM-ware. you can connect them via ssh or any RDP tools. EC2 have hourly billing model based on resources like RAM, CPU and network traffic.
-why ec2: just like in old days we build an app." />
+    <meta property="og:title" content="EKS Fargate" />
+<meta property="og:description" content="EKS with Fargate EKS can run containers on EC2 or Fargate Micro VMs or both. In case of fargate only mode, EKS asks &ldquo;hey fargate can you run containers for me.&rdquo; With fargate you don&rsquo;t have to manage scaling with Auto Scaling Group like we do in case of EC2.
+Normally when we run EC2, we can see those machines running in EC2 dashboard but fargate is only visible in EKS cluster detail section named culster&gt;compute&gt;nodes along with fargate profile." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.elesscode.com/posts/ec2-docker-lambda-fargate-eks-ecs-overview/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-08-05T08:13:22+05:00" />
-<meta property="article:modified_time" content="2022-08-05T08:13:22+05:00" />
+<meta property="og:url" content="https://www.elesscode.com/posts/eks-fargate/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-06T07:51:46+05:00" />
+<meta property="article:modified_time" content="2022-08-06T07:51:46+05:00" />
 
-<meta itemprop="name" content="Ec2 Docker Lambda Fargate Eks Ecs Overview">
-<meta itemprop="description" content="This is an overview from the Moon about basic compute resources in aws and what technologies can help us to manage them.
-EC2: Elastic Compute EC2 are the machines in the AWS cloud just like you create ubuntu,windows VMs in virtualbox or VM-ware. you can connect them via ssh or any RDP tools. EC2 have hourly billing model based on resources like RAM, CPU and network traffic.
-why ec2: just like in old days we build an app."><meta itemprop="datePublished" content="2022-08-05T08:13:22+05:00" />
-<meta itemprop="dateModified" content="2022-08-05T08:13:22+05:00" />
-<meta itemprop="wordCount" content="430">
+<meta itemprop="name" content="EKS Fargate">
+<meta itemprop="description" content="EKS with Fargate EKS can run containers on EC2 or Fargate Micro VMs or both. In case of fargate only mode, EKS asks &ldquo;hey fargate can you run containers for me.&rdquo; With fargate you don&rsquo;t have to manage scaling with Auto Scaling Group like we do in case of EC2.
+Normally when we run EC2, we can see those machines running in EC2 dashboard but fargate is only visible in EKS cluster detail section named culster&gt;compute&gt;nodes along with fargate profile."><meta itemprop="datePublished" content="2022-08-06T07:51:46+05:00" />
+<meta itemprop="dateModified" content="2022-08-06T07:51:46+05:00" />
+<meta itemprop="wordCount" content="808">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Ec2 Docker Lambda Fargate Eks Ecs Overview"/>
-<meta name="twitter:description" content="This is an overview from the Moon about basic compute resources in aws and what technologies can help us to manage them.
-EC2: Elastic Compute EC2 are the machines in the AWS cloud just like you create ubuntu,windows VMs in virtualbox or VM-ware. you can connect them via ssh or any RDP tools. EC2 have hourly billing model based on resources like RAM, CPU and network traffic.
-why ec2: just like in old days we build an app."/>
+<meta name="twitter:title" content="EKS Fargate"/>
+<meta name="twitter:description" content="EKS with Fargate EKS can run containers on EC2 or Fargate Micro VMs or both. In case of fargate only mode, EKS asks &ldquo;hey fargate can you run containers for me.&rdquo; With fargate you don&rsquo;t have to manage scaling with Auto Scaling Group like we do in case of EC2.
+Normally when we run EC2, we can see those machines running in EC2 dashboard but fargate is only visible in EKS cluster detail section named culster&gt;compute&gt;nodes along with fargate profile."/>
 
 	
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2E12SF4V3"></script>
@@ -76,7 +72,7 @@ why ec2: just like in old days we build an app."/>
   
 
   
-  <header class="cover bg-top" style="background-image: url('https://www.elesscode.com/images/ec2-eks-ecs-fargate-lambda.png');">
+  <header class="cover bg-top" style="background-image: url('https://www.elesscode.com/images/eks-fargate.png');">
     <div class="bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -151,7 +147,7 @@ why ec2: just like in old days we build an app."/>
 
       <div class="tc-l pv6 ph3 ph4-ns">
         
-          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Ec2 Docker Lambda Fargate Eks Ecs Overview</h1>
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">EKS Fargate</h1>
           
         
       </div>
@@ -183,7 +179,7 @@ why ec2: just like in old days we build an app."/>
   <div id="sharing" class="mt3 ananke-socials">
     
       
-      <a href="https://twitter.com/share?url=https://www.elesscode.com/posts/ec2-docker-lambda-fargate-eks-ecs-overview/&amp;text=Ec2%20Docker%20Lambda%20Fargate%20Eks%20Ecs%20Overview" class="ananke-social-link twitter no-underline" aria-label="share on Twitter">
+      <a href="https://twitter.com/share?url=https://www.elesscode.com/posts/eks-fargate/&amp;text=EKS%20Fargate" class="ananke-social-link twitter no-underline" aria-label="share on Twitter">
         
         <span class="icon"> <svg style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
 </span>
@@ -191,7 +187,7 @@ why ec2: just like in old days we build an app."/>
       </a>
     
       
-      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.elesscode.com/posts/ec2-docker-lambda-fargate-eks-ecs-overview/&amp;title=Ec2%20Docker%20Lambda%20Fargate%20Eks%20Ecs%20Overview" class="ananke-social-link linkedin no-underline" aria-label="share on LinkedIn">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.elesscode.com/posts/eks-fargate/&amp;title=EKS%20Fargate" class="ananke-social-link linkedin no-underline" aria-label="share on LinkedIn">
         
         <span class="icon"> <svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
@@ -203,7 +199,7 @@ why ec2: just like in old days we build an app."/>
   </div>
 
 
-      <h1 class="f1 athelas mt3 mb1">Ec2 Docker Lambda Fargate Eks Ecs Overview</h1>
+      <h1 class="f1 athelas mt3 mb1">EKS Fargate</h1>
       
       <p class="tracked">
         By <strong>Owais H</strong>
@@ -211,40 +207,157 @@ why ec2: just like in old days we build an app."/>
       
       
       
-      <time class="f6 mv4 dib tracked" datetime="2022-08-05T08:13:22+05:00">August 5, 2022</time>
+      <time class="f6 mv4 dib tracked" datetime="2022-08-06T07:51:46+05:00">August 6, 2022</time>
       
 
       
       
-        <span class="f6 mv4 dib tracked"> - 3 minutes read </span>
-        <span class="f6 mv4 dib tracked"> - 430 words </span>
+        <span class="f6 mv4 dib tracked"> - 4 minutes read </span>
+        <span class="f6 mv4 dib tracked"> - 808 words </span>
       
     </header>
-    <div class="nested-copy-line-height lh-copy font-fira f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>This is an overview from the Moon about basic compute resources in aws and what technologies can help us to manage them.</p>
-<h3 id="ec2-elastic-compute">EC2: Elastic Compute</h3>
-<p>EC2 are the machines in the AWS cloud just like you create ubuntu,windows VMs in virtualbox or VM-ware.
-you can connect them via ssh or any RDP tools.
-EC2 have hourly billing model based on resources like RAM, CPU and network traffic.</p>
-<p><strong>why ec2:</strong> just like in old days we build an app. ssh to instance, clone app and run the app. very easy to work with because its basic form of computing.</p>
-<h3 id="docker">Docker</h3>
-<p>Docker is use to build,run and deploy containers. you write an image and run it as container. you can run these container inside ec2 just like you can run them on your local machine. it take base image from any repository just like you take your code from github,bit bucket or code commit.</p>
-<p><strong>why docker:</strong>
-take all app code, libraries, dependencies, binaries etc and build as one image. Next simply run them as container.</p>
-<h3 id="lambda">Lambda</h3>
-<p>Lambda is function as service by AWS. It have millisecond billing model where you are charged based on millisecond and the RAM you have allocated. Their max timeout is 15 minutes. if your scripts takes more than 15 minutes then consider containers like docker or VMs like EC2. you have limited disk storage inside lambda environment.</p>
-<p><strong>why lambda:</strong>
-if a sync function takes only 3 minutes to run and it should only be running few times a day then why prepare full ec2 instance and pay for hourly.</p>
-<h3 id="fargate">Fargate</h3>
-<p>Its also compute platform just like lambda and ec2. lambda gets timeout but fargate does not because it have hourly billing model based on resources like vCPUs and RAM we allocate in units. we can deploy containers like docker on fargate. it scales automatically. Fargate can be managed by EKS pods or ECS tasks.</p>
-<p><strong>why fargate:</strong>
-no need to patch,scale vms like you do with ec2. with ec2 you have to use AutoScaling stuff and 24/7 monitoring. but in fargate it happens automatically.</p>
-<h3 id="eks-and-ecs">EKS and ECS</h3>
-<p>Both are same in terms how they manage compute resources. like both can work with fargate or ec2. EKS uses kubernetes while ECS is using AWS technology to manage compute resources.</p>
-<p><strong>why EKS or ECS:</strong>
-it handles scaling, balancing, managing containers clusters automatically. you just define a criteria.</p>
-<h3 id="summary">Summary</h3>
-<p>EC2, Lambda and Fargate all are compute resources just with different billing models and how we interact and manage them.
-EKS and ECS can help us manage clusters of ec2 or fargate.</p>
+    <div class="nested-copy-line-height lh-copy font-fira f4 nested-links mid-gray pr4-l w-two-thirds-l"><p><img src="/images/eks-fargate.png" alt="Image alt"></p>
+<h1 id="eks-with-fargate">EKS with Fargate</h1>
+<p>EKS can run containers on EC2 or Fargate <code>Micro VMs</code> or both.
+In case of fargate only mode, EKS asks &ldquo;hey fargate can you run containers for me.&rdquo;
+With fargate you don&rsquo;t have to manage scaling with Auto Scaling Group like we do in case of EC2.</p>
+<p>Normally when we run EC2, we can see those machines running in EC2 dashboard but fargate is only visible in EKS cluster detail section named <code>culster&gt;compute&gt;nodes</code> along with fargate profile..</p>
+<h3 id="fargate-profile">Fargate Profile</h3>
+<p>Fargate profile is an interface to configure fargate on an EKS cluster.
+Fargate Profile Template tells us which pods should run on fargate.  Below is the sample template.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;status&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;active&#34;</span><span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;subnets&#34;</span><span style="color:#960050;background-color:#1e0010">:</span>[<span style="color:#e6db74">&#34;...&#34;</span>]<span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;clusterName&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;MY_CLUSTER_X1&#34;</span><span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;fargateProfileArn&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;arn...&#34;</span><span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;selectors&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;namespace&#34;</span>: <span style="color:#e6db74">&#34;default&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;namespace&#34;</span>: <span style="color:#e6db74">&#34;kube-system&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;labels&#34;</span>:{
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;foo&#34;</span>: <span style="color:#e6db74">&#34;bar&#34;</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;namespace&#34;</span>: <span style="color:#e6db74">&#34;my-namespace&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>]<span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;fargateProfileName&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;FargateProfileCatchAll&#34;</span><span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;podExecutionRole&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;arn...&#34;</span><span style="color:#960050;background-color:#1e0010">,</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;createdAt&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#ae81ff">343491919.234</span>
+</span></span></code></pre></div><h4 id="selectors">selectors</h4>
+<p>Notice the <code>selectors</code> or we can call pod selectors. its a combination of namespaces and labels which allows EKS to catch pod deployment. Using namespaces and labels we can categories our apps like X1-Sync-Service, X1-Web-API and labels like dev,test,prod</p>
+<h4 id="subnets">subnets</h4>
+<p>Subnets to pick for the pod deployment or in other way we are choosing availability zones(AZs) where our pods will be placed.</p>
+<h5 id="podexecutionrole">podExecutionRole</h5>
+<p>IAM role to be associated to the kubelet. why kubelet needs IAM role. Just like we assign role to EC2 so it can access s3 etc.
+similarly we assign kubelet an IAM role so</p>
+<ol>
+<li>kubelet can pull images from ECR Elastic container registry</li>
+<li>kubelet can push logs to cloudwatch</li>
+</ol>
+<p>As we know pods run inside nodes/machines. similarly when EKS have to run the pod inside fargate micro-vms it will check fargate profile matches with pod labels and namespace.</p>
+<p>Here is the step by step process through which pod lands inside fargate.</p>
+<ol>
+<li>Let say we have pod with namespace=test and label=project1 and we want to launch it.</li>
+<li>webhooks <code>Mutating/validating</code> will match namespace and label with fargate profile.</li>
+<li>if pod namespace and labels matches with fargate selectors then kubernetes/eks scheduler will schedule the pod inside VM.</li>
+</ol>
+<h3 id="fargate-scheduler">Fargate Scheduler</h3>
+<p>Both kubernetes scheduler and fargate scheduler runs alongside. their purpose is the same like which pods to place on which nodes.</p>
+<h3 id="first-install-eksctl">First install eksctl</h3>
+<p>eksctl is tool to launch eks cluster very easily. its an official aws tool.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#download binary to tmp folder</span>
+</span></span><span style="display:flex;"><span>curl --silent --location <span style="color:#e6db74">&#34;https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_</span><span style="color:#66d9ef">$(</span>uname -s<span style="color:#66d9ef">)</span><span style="color:#e6db74">_amd64.tar.gz&#34;</span> | tar xz -C /tmp
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#move binary from tmp to bin</span>
+</span></span><span style="display:flex;"><span>sudo mv /tmp/eksctl /usr/local/bin
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#check is installation successful and its version</span>
+</span></span><span style="display:flex;"><span>eksctl version
+</span></span></code></pre></div><p>Next we will create cluster with fargate.</p>
+<h3 id="creating-an-eks-cluster-with-fargate-using-eksctl">Creating an EKS cluster with fargate using eksctl</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>eksctl create cluster --name eksFargateDemo --fargate --region us-east-2
+</span></span></code></pre></div><p>above naive command will lot of things like creating cluster via cloudformation, new cluster,  VPC, subnets, ENI and others lot of stuff.</p>
+<p>we can use existing VPC by specifying CIDR and subnets stuff but lets keep it simple.</p>
+<p>Next if your command is successful. then few things needs to be noticed.</p>
+<ol>
+<li>Goto AWS console and see EKS cluster section where <code>eksFargateDemo</code> will be listed there.</li>
+<li>Also eksctl will save config file inside your home directory with .kube folder. you can verify by running this command. <code>cat ~/.kube/config</code></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#list all pods</span>
+</span></span><span style="display:flex;"><span>kubectl get pods -A
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>NAME                                                    STATUS   ROLES    AGE   VERSION
+</span></span><span style="display:flex;"><span>fargate-ip-192-168-107-162.us-east-2.compute.internal   Ready    &lt;none&gt;   13h   v1.22.6-eks-14c7a48
+</span></span><span style="display:flex;"><span>fargate-ip-192-168-98-182.us-east-2.compute.internal    Ready    &lt;none&gt;   13h   v1.22.6-eks-14c7a48
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#list all fargate nodes</span>
+</span></span><span style="display:flex;"><span>kubectl get nodes
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>NAME                                                    STATUS   ROLES    AGE   VERSION
+</span></span><span style="display:flex;"><span>fargate-ip-192-168-107-162.us-east-2.compute.internal   Ready    &lt;none&gt;   13h   v1.22.6-eks-14c7a48
+</span></span><span style="display:flex;"><span>fargate-ip-192-168-98-182.us-east-2.compute.internal    Ready    &lt;none&gt;   13h   v1.22.6-eks-14c7a48
+</span></span></code></pre></div><p>Notice we have two pods and two fargate nodes are running so each node will have one pod right now.</p>
+<p>Next we can deploy some sample app defined by <code>myweb.yml</code></p>
+<pre tabindex="0"><code>apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: myweb
+spec: 
+  replicas: 1
+  selector: 
+    matchLabels: 
+      run: myweb
+  template: 
+    metadata: 
+      labels: 
+        run: myweb
+    spec: 
+      containers: 
+        - 
+          image: nginx
+          name: my-nginx
+          ports: 
+            - 
+              containerPort: 80
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#deploy myweb </span>
+</span></span><span style="display:flex;"><span>kubectl apply -f myweb.yml
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>deployment.apps/myweb created
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#list all pods again</span>
+</span></span><span style="display:flex;"><span>kubectl get pods -A
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>NAMESPACE     NAME                      READY   STATUS    RESTARTS   AGE
+</span></span><span style="display:flex;"><span>default       myweb-67bb7495d8-hfzmx    1/1     Running   <span style="color:#ae81ff">0</span>          4m23s
+</span></span><span style="display:flex;"><span>kube-system   coredns-9777f8b68-2q2cw   1/1     Running   <span style="color:#ae81ff">0</span>          14h
+</span></span><span style="display:flex;"><span>kube-system   coredns-9777f8b68-cqp5n   1/1     Running   <span style="color:#ae81ff">0</span>          14h
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>kubectl get nodes
+</span></span><span style="display:flex;"><span>NAME                                                    STATUS   ROLES    AGE    VERSION
+</span></span><span style="display:flex;"><span>fargate-ip-192-168-107-162.us-east-2.compute.internal   Ready    &lt;none&gt;   14h    v1.22.6-eks-14c7a48
+</span></span><span style="display:flex;"><span>fargate-ip-192-168-150-220.us-east-2.compute.internal   Ready    &lt;none&gt;   4m9s   v1.22.6-eks-14c7a48
+</span></span><span style="display:flex;"><span>fargate-ip-192-168-98-182.us-east-2.compute.internal    Ready    &lt;none&gt;   14h    v1.22.6-eks-14c7a48
+</span></span></code></pre></div><h4 id="why-eks">Why EKS</h4>
+<p>EKS install,maintain and operates kubernetes core feature called control plane or nodes. We will have to do lot of work if we setup kubernetes on EC2.
+EKS integrated with ECR, ELB, IAM and VPC.</p>
+<h4 id="why-eks-and-fargate">Why EKS and fargate</h4>
+<p>EKS have almost same benefits which kubernetes have.</p>
+<ol>
+<li>We only care about app spec not infrastructure nodes.</li>
+<li>automatic cluster scaling.</li>
+<li>automatic host patching we only take care of things inside container.</li>
+<li>Because containers are isolated inside their own pods.</li>
+<li>we just update cluster and relaunches pods.</li>
+<li>EFS for stateful apps, built-in logging and load-balancing.</li>
+</ol>
+<h3 id="fargate-limitations">Fargate Limitations</h3>
+<ul>
+<li>Full privileged access is blocked and hiding linux capabilities.</li>
+<li>No support for general purpose DaemonSets</li>
+<li>No GPUs</li>
+<li>No Amazon EBS Support</li>
+</ul>
 <ul class="pa0">
   
 </ul>
@@ -260,12 +373,11 @@ EKS and ECS can help us manage clusters of ec2 or fargate.</p>
   <ul>
     <li>
       <ul>
-        <li><a href="#ec2-elastic-compute">EC2: Elastic Compute</a></li>
-        <li><a href="#docker">Docker</a></li>
-        <li><a href="#lambda">Lambda</a></li>
-        <li><a href="#fargate">Fargate</a></li>
-        <li><a href="#eks-and-ecs">EKS and ECS</a></li>
-        <li><a href="#summary">Summary</a></li>
+        <li><a href="#fargate-profile">Fargate Profile</a></li>
+        <li><a href="#fargate-scheduler">Fargate Scheduler</a></li>
+        <li><a href="#first-install-eksctl">First install eksctl</a></li>
+        <li><a href="#creating-an-eks-cluster-with-fargate-using-eksctl">Creating an EKS cluster with fargate using eksctl</a></li>
+        <li><a href="#fargate-limitations">Fargate Limitations</a></li>
       </ul>
     </li>
   </ul>

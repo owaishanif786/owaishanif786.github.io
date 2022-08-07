@@ -14,7 +14,7 @@ EC2 are the machines in the AWS cloud just like you create ubuntu,windows VMs in
 you can connect them via ssh or any RDP tools.
 EC2 have hourly billing model based on resources like RAM, CPU and network traffic.
 
-**why ec2:** just like old days build an app. ssh to to instance clone the app and run the app. very easy to work with because its basic form of computing.
+**why ec2:** just like in old days we build an app. ssh to instance, clone app and run the app. very easy to work with because its basic form of computing.
 
 ### Docker
 Docker is use to build,run and deploy containers. you write an image and run it as container. you can run these container inside ec2 just like you can run them on your local machine. it take base image from any repository just like you take your code from github,bit bucket or code commit. 
