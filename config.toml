@@ -19,6 +19,10 @@ googleAnalytics = "G-M2E12SF4V3"
   recent_posts_number = 3
   Paginate = 10
 
+[ markup.goldmark ]
+[ markup.goldmark.extensions]
+    table = true
+
 [sitemap]
   changefreq = "weekly"
   priority = 0.5

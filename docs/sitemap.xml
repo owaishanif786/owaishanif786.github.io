@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.elesscode.com/posts/eks-fargate/</loc>
-    <lastmod>2022-08-06T07:51:46+05:00</lastmod>
+    <loc>https://www.elesscode.com/posts/dynamodb-overview-and-querying-with-typescript/</loc>
+    <lastmod>2022-08-08T04:57:00+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.elesscode.com/</loc>
-    <lastmod>2022-08-06T07:51:46+05:00</lastmod>
+    <lastmod>2022-08-08T04:57:00+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://www.elesscode.com/posts/</loc>
+    <lastmod>2022-08-08T04:57:00+05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://www.elesscode.com/posts/eks-fargate/</loc>
     <lastmod>2022-08-06T07:51:46+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -6,7 +6,20 @@
     <description>Recent content on elesscode</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Aug 2022 07:51:46 +0500</lastBuildDate><atom:link href="https://www.elesscode.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Aug 2022 04:57:00 +0500</lastBuildDate><atom:link href="https://www.elesscode.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dynamodb Overview and Querying With Typescript</title>
+      <link>https://www.elesscode.com/posts/dynamodb-overview-and-querying-with-typescript/</link>
+      <pubDate>Mon, 08 Aug 2022 04:57:00 +0500</pubDate>
+      
+      <guid>https://www.elesscode.com/posts/dynamodb-overview-and-querying-with-typescript/</guid>
+      <description>Dynamodb Overview and Querying with Typescript/Node Two main things while defining table.
+Partition Key Sort Key For simplicity I have selected On Demand Capcity mode.
+Partition Key or Hash Key Partition key is the must thing you need to define while creating table. This is the default index based on which dynamo indexes entire table data.
+Keys suited for partition Key:
+Anything that can be unique i.e IDs, file_paths etc If you don&amp;rsquo;t have unique partition key than you can also use sort key along side partition key.</description>
+    </item>
+    
     <item>
       <title>EKS Fargate</title>
       <link>https://www.elesscode.com/posts/eks-fargate/</link>
