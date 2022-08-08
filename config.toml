@@ -5,6 +5,7 @@ tags = ['cloud', 'aws','node','typescript','javascript']
 title = 'elesscode'
 theme = "ananke"
 publishdir = 'docs'
+enableRobotsTXT = true
 googleAnalytics = "G-M2E12SF4V3"
 [params]
   body_classes = "bg-light-yellow font-fira"
@@ -21,7 +22,7 @@ googleAnalytics = "G-M2E12SF4V3"
 
 [ markup.goldmark ]
 [ markup.goldmark.extensions]
-    table = true
+  htable = true
 
 [sitemap]
   changefreq = "weekly"
