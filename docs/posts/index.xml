@@ -6,7 +6,19 @@
     <description>Recent content in Posts on elesscode</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Aug 2022 04:57:00 +0500</lastBuildDate><atom:link href="https://www.elesscode.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 20 Aug 2022 10:12:04 +0500</lastBuildDate><atom:link href="https://www.elesscode.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript Prototypes and Classes</title>
+      <link>https://www.elesscode.com/posts/javascript-prototypes-and-classes/</link>
+      <pubDate>Sat, 20 Aug 2022 10:12:04 +0500</pubDate>
+      
+      <guid>https://www.elesscode.com/posts/javascript-prototypes-and-classes/</guid>
+      <description>By using prototypes we can share properties and methods.
+for example X class is parent of all. and A,B,C classes can inherit from X so it can share properties and methods from X class.
+to inherit any A,B,C from X we use always use new keyword along with constructor. just like to create an object from class we have to use new keyword.
+//step1: define the parent constructor function named `X` function X(){} //step2: define common properties and methods that will be used by its child //also note the syntax.</description>
+    </item>
+    
     <item>
       <title>Dynamodb Overview and Querying With Typescript</title>
       <link>https://www.elesscode.com/posts/dynamodb-overview-and-querying-with-typescript/</link>
