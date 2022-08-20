@@ -2,6 +2,7 @@
 title: "Javascript Prototypes and Classes"
 date: 2022-08-20T10:12:04+05:00
 draft: false
+featured_image: '/images/js_proto_class.png'
 
 ---
 
